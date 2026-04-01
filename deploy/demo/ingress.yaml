@@ -2,10 +2,10 @@ apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: nodejs-demoapp
-  namespace: prod
+  namespace: demoapp
 spec:
   rules:
-  - host: nodejs-prod.example.com
+  - host: nodejs.demoapp.example.com
     http:
       paths:
       - path: /
